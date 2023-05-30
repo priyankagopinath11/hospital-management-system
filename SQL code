@@ -1,0 +1,173 @@
+INSERTING VALUES INTO THE TABLES
+
+Employee table
+
+insert into employe values(987 , 10000 , 'DR.RAJEEV' , 'M' , 9867854045 ) 
+
+insert into employe values(787 , 300000 , 'DR.AJAY' , 'M' , 9867864464) 
+
+insert into employe values(2287 , 60000, 'DR.MOHMD' , 'M' , 675046783) 
+
+insert into employe values(1001 , 100000, 'DR.ANUNAY' , 'M' , 97150560969) 
+
+insert into employe values(206 , 1000000 , 'DR.RAJIV' , 'M' , 00987654321) 
+
+insert into employe values(765 , 10000 , 'Reshma' , 'F' , 0098765432 ) 
+
+insert into employe values(208 , 20000 , 'Anjali' , 'F' , 23472374823) 
+
+insert into employe values(199 , 20000 , 'Pushpa' , 'F' , 5678654321 ) 
+
+insert into employe values(20 , 50000 , 'Mary' , 'F' , 009715057757) 
+
+insert into employe values(30, 40000 , 'Juhi' , 'F' , 0092345668) 
+
+Doctor table
+
+insert into doctor values(2287 , 'Pediatrics' , 206 , null) 
+
+insert into doctor values(987 , 'oncology' , 206 , null) 
+
+insert into doctor values(1001, 'Cardiologist' , 206,null) 
+
+insert into doctor values(787, 'ENT' ,null , 6) 
+
+insert into doctor values(206 , 'Neuro' ,null , 12)
+
+insert into doctor values(998 , 'Internal(v)' ,null , null)
+
+insert into doctor values(988 , 'Dermt(v)' ,null , null)
+
+ 
+Room table
+
+insert into room values ( 100, 'Standard') 
+
+insert into room values ( 101, 'Standard') 
+
+insert into room values ( 102 , 'Standard') 
+
+insert into room values ( 105 , 'Deluxe') 
+
+insert into room values ( 106 , 'Standard') 
+
+insert into room values ( 107 , 'ICU') 
+
+insert into room values ( 108 , 'ICU') 
+
+insert into room values ( 109 , 'OT') 
+
+Nurse table
+
+insert into nurse values(765 , 100) 
+
+insert into nurse values(199 , 105 ) 
+
+insert into nurse values(20 , 109 ) 
+
+insert into nurse values(30 , 108 ) 
+
+insert into nurse values(208 , 107 ) 
+
+
+Patient table
+
+insert into patient values(209 , 'Priyansh' , 'M' , '2002-06-13', 1000 , '2022-04-01' , '2022-04-02', 2, 100 , 787 , 'Mumbai' , 'Maharashtra' , 'Breachcandy') 
+
+insert into patient values(620 , 'Chirag' , 'M' , '2002-08-12', 10000 , '2022-04-02' , '2022-04-06', 4, 105 , 206 , 'Faridabad' , 'Haryana' , 'Sector 2') 
+
+insert into patient values(466 , 'Neil' , 'M' , '2001-06-17', 25000 , '2022-04-01' , '2022-04-03', 3, 107 , 1001 , 'Noida' , 'UP' , 'Sector16') 
+
+insert into patient values(622 , 'Vishnu' , 'M' , '2002-02-1', 50000, '2022-04-03' , '2022-04-08', 6, 109 , 987 , 'Mumbai' , 'Maharashtra' , 'Breachcandy') 
+
+insert into patient values(420 , 'Priyanshi' , 'F' , '2002-12-23', 4000 , '2022-03-23' , '2022-03-24', 1, 105 , 2287 , 'Mumbai' , 'Maharashtra' , 'Breachcandy') 
+
+Medicine table
+
+insert into medecine values (7884512, 999 , 620) 
+
+insert into medecine values (5124886 , 2999 , 420) 
+
+insert into medecine values (4206985 , 1999 , 466) 
+
+insert into medecine values (0098235 , 799 , 209) 
+
+insert into medecine values (1010521 , 1199 , 622) 
+
+Dependants table
+
+insert into dependants values(206,’priyansh’, ‘M’, 19) 
+
+insert into dependants values(206, 'priyanshi' , 'F' ,17) 
+
+insert into dependants values(987, 'neil' , 'M' ,21) 
+
+insert into dependants values(765, 'anjali' , 'F' , 14) 
+
+insert into dependants values(20, ‘angelina' , 'F' , 26) 
+
+insert into dependants values(30, 'nancy’ , 'F' , 18) 
+
+
+Educational_qualification table
+
+insert into educational_qualification values(206, 'AIIMS D', 1994 , 'MBBS') 
+
+insert into educational_qualification values(1001, 'AIIMS D', 1994 , 'MBBS')
+
+insert into educational_qualification values(2287 , 'AIIMS D', 1994 , 'MBBS')
+
+insert into educational_qualification values(206, 'AIIMS D', 1996, 'MD') 
+
+insert into educational_qualification values(987, 'AIIMS U', 1999 , 'MBBS') 
+
+insert into educational_qualification values(787, 'AIIMS K', 2000 , 'MBBS') 
+
+insert into educational_qualification values(765, 'DAYANAND', 2004 , 'ADN') 
+
+insert into educational_qualification values(208 , 'DAYANAND', 2008 , 'ADN') 
+
+insert into educational_qualification values(199,  'MMC', 2003 , 'ADN') 
+
+insert into educational_qualification values(20, 'KMC', 2010 , 'ADN') 
+
+insert into educational_qualification values(30, 'MMC', 2000 , 'ADN') 
+
+Visiting_dates table
+
+insert into visiting_dates values(988, ‘mon’)  
+
+insert into visiting_dates values(988 , ‘thu')  
+
+insert into visiting_dates values(988 , ‘fri')  
+
+insert into visiting_dates values(998 , 'wed')  
+
+insert into visiting_dates values(998 , 'sun')
+
+
+TRIGGER
+
+create table backup_patient (PID int primary key, Name varchar(15),consultation_fee int, date_admitted varchar(15), date_discharged varchar(15))
+
+create or replace trigger patient_after_delete
+after delete on patient
+for each row
+begin
+insert into backup_patient values(:old.PID,:old.name,:old.consultation_fee, :old.date_admitted, :old.date_discharged);
+End;
+/
+
+VIEWS
+
+create view trainee
+as
+select employe.eid,salary, name, sex, contact_no, specialization, training_under from employe,doctor where employe.eid = doctor.eid and training_under!=null
+
+
+create view permanent
+as
+select employe.eid,salary, name, sex, contact_no, specialization, working_hours from employe,doctor where employe.eid = doctor.eid and working_hours!=null
+
+
+
